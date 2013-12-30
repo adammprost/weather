@@ -1,0 +1,166 @@
+html {
+    background-color: #F0F0F0;
+}
+body {
+    font-family: sans-serif;
+    background-color: #CCC;
+    width: 800px;
+    margin: 0 auto;
+    border-left: 2px solid #BBB;
+    border-right: 2px solid #BBB;
+}
+header {
+    background-color: #999;
+    background-image: linear-gradient(0deg, #999, #CCC);
+    padding: 1% 2%;
+    border-bottom: 2px solid #BBB;
+    border-top: 2px solid #BBB;
+    overflow: auto;
+}
+header h3 {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+#zipInput, #searchButton {
+    float: right;
+}
+#zipInput {
+    padding: 3px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 1%;
+}
+input[type="button"] {
+    background-color: #669;
+    background-image: linear-gradient(0deg, #99B, #339);
+    height: 24px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+}
+section {
+    padding: 3% 2%;
+    background-color: #CCC;
+    overflow: auto;
+}
+.loading {
+    width: 40%;
+    margin: 1% auto;
+    text-align: center;
+    font-size: 29px;
+    color: #555;
+}
+.response {
+    font-size: 13px;
+    margin-bottom: 1%;
+}
+
+/* List of available locations */
+.location {
+    float: left;
+    width: 49%;
+    font-size: 13px;
+    margin-top: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: 3px -3px 5px #BBBBBB;
+    font-weight: 900;
+    cursor: pointer;
+}
+.location:nth-child(2n) {
+    margin-left: 2%;
+}
+.location div {
+    float: left;
+    text-align: center;
+    height: 30px;
+    padding-top: 14px;
+}
+.location div:first-child {
+    width: 80%;
+    background-color: #DDD;
+    background-image: linear-gradient(0deg, #AAA, #CCC, #CCC, #AAA);
+    border-radius: 5px 0px 0px 5px;
+}
+.location div:last-child {
+    width: 20%;
+    background-color: #669;
+    background-image: linear-gradient(0deg, #88A, #339);
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+}
+
+/* List of 5 day forecast based on zip code */
+.forecast {
+    float: left;
+    width: 18.4%;
+    font-size: 12px;
+    margin-top: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: 3px -3px 5px #BBBBBB;
+}
+.forecast:not(:first-child) {
+    margin-left: 2%;
+}
+.forecast .day {
+    background-color: #999;
+    background-image: linear-gradient(0deg, #CCC, #999);
+    border-bottom: 1px solid grey;
+    border-radius: 5px 5px 0 0;
+    font-weight: 900;
+    padding: 5px;
+    text-align: center;
+}
+.forecast .high, .forecast .low {
+    float: left;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    width: 50%;
+}
+.forecast .high {
+    background-color: #FAA;
+}
+.forecast .low {
+    background-color: #AAF;
+}
+.forecast .conditions, .forecast .precipitation {
+    display: none;
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #DDD;
+    clear: left;
+}
+.forecast .conditions {
+    border-top: 1px solid grey;
+}
+.forecast .expand {
+    border-top: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    clear: left;
+    padding: 3px 0px;
+    background-color: #999;
+    background-image: linear-gradient(0deg, #999, #CCC);
+    font-size: 10px;
+}
+footer {
+    background-color: #999;
+    background-image: linear-gradient(0deg, #CCC, #999);
+    height: 15px;
+    padding: 1% 2%;
+    border-top: 2px solid #BBB;
+    border-bottom: 2px solid #BBB;
+    font-size: 11px;
+}

@@ -1,8 +1,11 @@
 <?php
-/* Simulates a weather database and outputs weather data
-   in JSON format.
+/* Simulates a weather database to eliminate the need for
+ * running a SQL DB just to demo a short program
+ * (SQL samples available on request)
    
-   Author: Adam Prost
+ * Output: JSON
+   
+ * Author: Adam Prost
 */
 
 class Forecast {
